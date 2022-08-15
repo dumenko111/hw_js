@@ -1,7 +1,8 @@
 let message;
 const ADMIN_PASSWORD = 'jqueryismyjam';
-const userPass = prompt.function (password) {
-    const a = ('please enter password')
+
+const userPass = function(password) { 
+
     if (password === null) {
         message = 'Отменено пользователем!'
     } else if (password === ADMIN_PASSWORD) {
@@ -11,8 +12,8 @@ const userPass = prompt.function (password) {
     }
     return alert(message)
 }
-console.log(userPass('fsdfsf'))
 
+console.log(userPass(prompt('enter password')))
 
 
 // Задание 3
@@ -29,5 +30,3 @@ console.log(userPass('fsdfsf'))
 // записать в message строку 'Доступ запрещен, неверный пароль!'
 // После всех проверок вывести в alert значение переменной message.
 // const ADMIN_PASSWORD = 'jqueryismyjam';
-// let message;
-// Задани
