@@ -15,15 +15,17 @@
 // prompt плюсовать к общей сумме не нужно,
 // после чего снова пользователю предлагается ввести число в prompt.
 
-let input = prompt([]);
+let input;
 let total = 0;
  
-for (const inp of input) {
-    if (input !== null) {
-        total += inp
-    } else {
-        console.log(total)
+while (true) {
+    input = prompt('Enter number')
+
+    if (input === null) {
+        alert(`total number ${total}`)
+        break
     }
-    
+    total += Number(input)
 }
-console.log(alert(`Общая сумма чисел равна ${total}`))
+console.log(alert(`Загальна сума чисел = ${total}`))
+
